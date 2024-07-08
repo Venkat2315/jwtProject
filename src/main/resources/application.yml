@@ -1,5 +1,15 @@
-#hello
-
-
-
-
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/JWT_SECURITY
+    driver-class-name: org.postgresql.Driver
+    username: postgres
+    password: postgre
+  jpa:
+    hibernate:
+      ddl-auto: 'create-drop'
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql:true
+    database: POSTGRESQL
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
